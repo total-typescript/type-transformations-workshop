@@ -6,16 +6,18 @@ interface Attributes {
   age: number;
 }
 
-type AttributeGetters = unknown;
+type AttributeGetters = {
+  [K in keyof Attributes as `get${Capitalize<K>}`]: () => Attributes[K];
+};
 
 type tests = [
   Expect<
     Equal<
       AttributeGetters,
       {
-        firstName: () => string;
-        lastName: () => string;
-        age: () => number;
+        getFirstName: () => string;
+        getLastName: () => string;
+        getAge: () => number;
       }
     >
   >,

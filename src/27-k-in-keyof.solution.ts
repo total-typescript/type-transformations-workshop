@@ -6,7 +6,9 @@ interface Attributes {
   age: number;
 }
 
-type AttributeGetters = unknown;
+type AttributeGetters = {
+  [K in keyof Attributes]: () => Attributes[K];
+};
 
 type tests = [
   Expect<
