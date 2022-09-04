@@ -2,7 +2,7 @@
 
 ## Quickstart
 
-Clone this repo or [open in Gitpod](https://gitpod.io/#https://github.com/total-typescript/beginners-typescript).
+Clone this repo or [open in Gitpod](https://gitpod.io/#https://github.com/total-typescript/type-transformations-tutorial).
 
 ```sh
 # Installs all dependenciesG
