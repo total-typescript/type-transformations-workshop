@@ -36,7 +36,9 @@ if (!exerciseFile) {
 chokidar.watch(exerciseFile).on("all", (event, path) => {
   const fileContents = fs.readFileSync(exerciseFile, "utf8");
 
-  const containsVitest = fileContents.includes("vitest");
+  const containsVitest =
+    fileContents.includes(`from "vitest"`) ||
+    fileContents.includes(`from 'vitest'`);
   try {
     console.clear();
     if (containsVitest) {
