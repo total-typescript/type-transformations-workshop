@@ -17,16 +17,18 @@ npm run solution 01
 
 ## How to take the course
 
-You'll notice that the course is split into exercises. Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
+You'll notice that the course is split into modules. Each module is a group of related exercises.
+
+Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
 
 To take an exercise:
 
 1. Go into `*.problem.ts`
-2. Run `npm run exercise 01`, where `01` is the number of the exercise you're on.
+2. Run `npm run exercise 01`, where `01` is the number of the exercise (not module) you're on.
 
 The `exercise` script will run TypeScript typechecks and a test suite on the exercise.
 
-This course encourages **active, exploratory learning**. In the video, I'll explain a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
+This course encourages **active, exploratory learning**. I'll present a problem, and **you'll be asked to try to find a solution**. To attempt a solution, you'll need to:
 
 1. Check out [TypeScript's docs](https://www.typescriptlang.org/docs/handbook/intro.html)
 2. Try to find something that looks relevant.
