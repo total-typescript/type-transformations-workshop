@@ -1,8 +1,8 @@
-import { Equal, Expect } from "./helpers/type-utils";
+import { Equal, Expect } from "../helpers/type-utils";
 
 type MyArgs = [a: string, b: number, c: boolean];
 
-const myFunc = (...args: unknown) => {
+const myFunc = (...args: MyArgs) => {
   return `a: ${args[0]}, b: ${args[1]}, c: ${args[2]}`;
 };
 
