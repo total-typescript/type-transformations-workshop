@@ -14,7 +14,7 @@ if (!exercise) {
   process.exit(1);
 }
 
-const allExercises = fg.sync(path.join(srcPath, "**", "**.ts"));
+const allExercises = fg.sync(path.join(srcPath, "**", "**.ts").replace(/\\/g, "/"));
 
 let pathIndicator = ".problem.";
 
