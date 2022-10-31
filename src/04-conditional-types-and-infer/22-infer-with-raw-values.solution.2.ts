@@ -1,6 +1,8 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type GetDataValue<T> = T extends { data: infer TData } ? TData : never;
+type GetDataValue<T> = T extends { data: infer TInferredData }
+  ? TInferredData
+  : never;
 
 type tests = [
   Expect<Equal<GetDataValue<{ data: "hello" }>, "hello">>,
@@ -10,5 +12,5 @@ type tests = [
       GetDataValue<{ data: { name: "hello"; age: 20 } }>,
       { name: "hello"; age: 20 }
     >
-  >,
+  >
 ];
