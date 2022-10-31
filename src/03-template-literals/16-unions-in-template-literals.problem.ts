@@ -4,12 +4,12 @@ type BreadType = "rye" | "brown" | "white";
 
 type Filling = "cheese" | "ham" | "salami";
 
-type Bread = unknown;
+type Sandwich = unknown;
 
 type tests = [
   Expect<
     Equal<
-      Bread,
+      Sandwich,
       | "rye sandwich with cheese"
       | "rye sandwich with ham"
       | "rye sandwich with salami"
@@ -20,5 +20,5 @@ type tests = [
       | "white sandwich with ham"
       | "white sandwich with salami"
     >
-  >,
+  >
 ];
