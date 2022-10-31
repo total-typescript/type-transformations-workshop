@@ -2,7 +2,7 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 const getServerSideProps = async () => {
   const data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
-  const json = (await data.json()) as { title: string };
+  const json: { title: string } = await data.json();
   return {
     props: {
       json,
@@ -22,5 +22,5 @@ type tests = [
       InferPropsFromServerSideFunction<typeof getServerSideProps>,
       { json: { title: string } }
     >
-  >,
+  >
 ];
