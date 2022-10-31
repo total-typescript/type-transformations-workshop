@@ -4,7 +4,7 @@ type Fruit = "apple" | "banana" | "orange";
 
 type AppleOrBanana = Fruit extends infer T
   ? T extends "apple" | "banana"
-    ? Fruit
+    ? T
     : never
   : never;
 
