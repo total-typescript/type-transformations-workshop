@@ -20,5 +20,5 @@ type tests = [
         getAge: () => number;
       }
     >
-  >,
+  >
 ];
