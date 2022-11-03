@@ -17,10 +17,12 @@ type MyType = {
   };
 };
 
+type Result = DeepPartial<MyType>;
+
 type tests = [
   Expect<
     Equal<
-      DeepPartial<MyType>,
+      Result,
       {
         a?: string;
         b?: number;
@@ -36,5 +38,5 @@ type tests = [
         };
       }
     >
-  >,
+  >
 ];
