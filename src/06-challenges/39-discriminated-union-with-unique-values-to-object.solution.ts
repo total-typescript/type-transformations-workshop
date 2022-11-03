@@ -13,11 +13,7 @@ type Route =
   | { route: "/admin/users" };
 
 type RoutesObject = {
-  [R in Route["route"]]: Extract<Route, { route: R }> extends {
-    search: infer S;
-  }
-    ? S
-    : never;
+  [R in Route as R["route"]]: R extends { search: infer S } ? S : never;
 };
 
 type tests = [
@@ -34,5 +30,5 @@ type tests = [
         "/admin/users": never;
       }
     >
-  >,
+  >
 ];
