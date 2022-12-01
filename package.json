@@ -97,7 +97,21 @@
     "e-39": "npm run exercise 39",
     "s-39": "npm run solution 39",
     "e-40": "npm run exercise 40",
-    "s-40": "npm run solution 40"
+    "s-40": "npm run solution 40",
+    "e-20.1": "npm run exercise 20.1",
+    "s-20.1": "npm run solution 20.1",
+    "e-20.2": "npm run exercise 20.2",
+    "s-20.2": "npm run solution 20.2",
+    "e-20.3": "npm run exercise 20.3",
+    "s-20.3": "npm run solution 20.3",
+    "e-20.4": "npm run exercise 20.4",
+    "s-20.4": "npm run solution 20.4",
+    "e-20.5": "npm run exercise 20.5",
+    "s-20.5": "npm run solution 20.5",
+    "e-20.6": "npm run exercise 20.6",
+    "s-20.6": "npm run solution 20.6",
+    "e-20.7": "npm run exercise 20.7",
+    "s-20.7": "npm run solution 20.7"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
