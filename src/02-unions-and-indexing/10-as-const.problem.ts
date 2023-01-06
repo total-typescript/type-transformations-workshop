@@ -11,7 +11,10 @@ export const programModeEnumMap = {
   SELF_DIRECTED: "selfDirected",
   PLANNED_ONE_ON_ONE: "planned1on1",
   PLANNED_SELF_DIRECTED: "plannedSelfDirected",
-};
+} as const;
+
+// const assertion narrows the property types instead of referring to a generic value type
+// e.g. typeof GROUP key after const assertion is its exact value instead of generic string
 
 export type GroupProgram = typeof programModeEnumMap["GROUP"];
 export type AnnouncementProgram = typeof programModeEnumMap["ANNOUNCEMENT"];

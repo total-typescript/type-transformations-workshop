@@ -9,7 +9,13 @@ export const programModeEnumMap = {
   PLANNED_SELF_DIRECTED: "plannedSelfDirected",
 } as const;
 
-export type IndividualProgram = unknown;
+// const assertion makes the property keys readonly
+type ProgramModeEnumMap = typeof programModeEnumMap;
+
+// get the keys of type and exclude the ones not needed
+type IndividualProgramWithoutGroupAndAnnouncement = Exclude<keyof ProgramModeEnumMap, 'GROUP' | 'ANNOUNCEMENT'>;
+
+export type IndividualProgram = ProgramModeEnumMap[IndividualProgramWithoutGroupAndAnnouncement];
 
 type tests = [
   Expect<

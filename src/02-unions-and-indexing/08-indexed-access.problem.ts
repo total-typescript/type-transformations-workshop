@@ -8,11 +8,14 @@ export const fakeDataDefaults = {
   ID: "id",
 };
 
-export type StringType = unknown;
-export type IntType = unknown;
-export type FloatType = unknown;
-export type BooleanType = unknown;
-export type IDType = unknown;
+// essence is to get the type of any object using typeof operator and thereafter identifying
+// the individual property types through index access. This was known from before
+
+export type StringType = typeof fakeDataDefaults['String'];
+export type IntType = typeof fakeDataDefaults['Int'];
+export type FloatType = typeof fakeDataDefaults['Float'];
+export type BooleanType = typeof fakeDataDefaults['Boolean'];
+export type IDType = typeof fakeDataDefaults['ID'];
 
 type tests = [
   Expect<Equal<StringType, string>>,
