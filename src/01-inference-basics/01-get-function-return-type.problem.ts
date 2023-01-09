@@ -1,3 +1,4 @@
+import { TypeOf } from "zod";
 import { Equal, Expect } from "../helpers/type-utils";
 
 const myFunc = () => {
@@ -7,6 +8,6 @@ const myFunc = () => {
 /**
  * How do we extract MyFuncReturn from myFunc?
  */
-type MyFuncReturn = unknown;
+type MyFuncReturn = ReturnType<typeof myFunc>;
 
 type tests = [Expect<Equal<MyFuncReturn, string>>];
