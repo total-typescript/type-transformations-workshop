@@ -8,7 +8,7 @@ const getUser = () => {
   });
 };
 
-type ReturnValue = ReturnType<typeof getUser>;
+type ReturnValue = Awaited<ReturnType<typeof getUser>>;
 
 type tests = [
   Expect<Equal<ReturnValue, { id: string; name: string; email: string }>>,
