@@ -11,4 +11,7 @@ type tests = [
       { name: "hello"; age: 20 }
     >
   >,
+  // Expect that if you pass in string, it
+  // should return never
+  Expect<Equal<GetDataValue<string>, never>>,
 ];

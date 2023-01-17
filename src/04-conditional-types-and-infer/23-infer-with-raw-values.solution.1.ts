@@ -10,5 +10,8 @@ type tests = [
       GetDataValue<{ data: { name: "hello"; age: 20 } }>,
       { name: "hello"; age: 20 }
     >
-  >
+  >,
+  // Expect that if you pass in string, it
+  // should return never
+  Expect<Equal<GetDataValue<string>, never>>,
 ];
