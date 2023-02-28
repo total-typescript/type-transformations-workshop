@@ -6,13 +6,25 @@ export const fakeDataDefaults = {
   Float: 1.14,
   Boolean: true,
   ID: "id",
+  obj: {
+    nestedProp: "hello"
+  }
 };
 
-export type StringType = unknown;
-export type IntType = unknown;
-export type FloatType = unknown;
-export type BooleanType = unknown;
-export type IDType = unknown;
+/**
+ * In typescript, you can use indexes too just as you would do in JS objects, in order to access each property. It is even possible to
+ * access nested objects
+ */
+export type StringType = typeof fakeDataDefaults['String'];
+export type IntType = typeof fakeDataDefaults['Int'];
+export type FloatType = typeof fakeDataDefaults['Float'];
+export type BooleanType = typeof fakeDataDefaults['Boolean'];
+export type IDType = typeof fakeDataDefaults['ID'];
+
+/**
+ * It is even possible to access nested object's properties
+ */
+export type NestedPropType = typeof fakeDataDefaults['obj']['nestedProp'];
 
 type tests = [
   Expect<Equal<StringType, string>>,
