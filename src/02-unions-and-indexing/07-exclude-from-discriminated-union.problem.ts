@@ -14,7 +14,11 @@ export type Event =
       event: KeyboardEvent;
     };
 
-type NonKeyDownEvents = unknown;
+/**
+ * Same as the Extract utility type, this one will EXCLUDE all members of a union that EXTEND the given structure and return a new
+ * union type, or a single type if only one member is left from the exclusion.
+ */
+type NonKeyDownEvents = Exclude<Event, { type: "keydown" }>;
 
 type tests = [
   Expect<
