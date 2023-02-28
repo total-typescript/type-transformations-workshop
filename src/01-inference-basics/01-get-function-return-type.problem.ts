@@ -7,6 +7,6 @@ const myFunc = () => {
 /**
  * How do we extract MyFuncReturn from myFunc?
  */
-type MyFuncReturn = unknown;
+type MyFuncReturn = ReturnType<typeof myFunc>;
 
 type tests = [Expect<Equal<MyFuncReturn, string>>];
