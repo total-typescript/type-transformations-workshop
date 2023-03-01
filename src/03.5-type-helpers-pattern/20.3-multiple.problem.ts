@@ -1,8 +1,11 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type CreateDataShape = {
-  data: unknown;
-  error: unknown;
+/**
+ * This example demonstrates, how we can have multiple "parameters" in a type function.
+ */
+type CreateDataShape<TData, TError> = {
+  data: TData;
+  error: TError;
 };
 
 type tests = [
