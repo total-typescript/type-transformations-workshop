@@ -1,6 +1,9 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type CreateDataShape<TData, TError> = {
+/**
+ * This example shows the usage of a default value
+ */
+type CreateDataShape<TData, TError = undefined> = {
   data: TData;
   error: TError;
 };
