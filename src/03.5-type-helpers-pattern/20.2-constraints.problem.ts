@@ -1,6 +1,9 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type AddRoutePrefix<TRoute> = `/${TRoute}`;
+/**
+ * Here is an example where we add a CONSTRAINT to the type function parameter, to only allow strings to be passed in.
+ */
+type AddRoutePrefix<TRoute extends string> = `/${TRoute}`;
 
 type tests = [
   Expect<Equal<AddRoutePrefix<"">, "/">>,
