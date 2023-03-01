@@ -8,7 +8,12 @@ type Names = [
   "BB King",
 ];
 
-type GetSurname<T> = unknown;
+/**
+ * This example shows that we can even use template literals as extends and still infer a passed value!
+ */
+type GetSurname<T> = T extends `${string} ${infer Surname}`
+  ? Surname
+  : never;
 
 type tests = [
   Expect<Equal<GetSurname<Names[0]>, "Pocock">>,
