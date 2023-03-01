@@ -1,6 +1,9 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type GetParametersAndReturnType<T> = {
+/**
+ * Constraining the type function parameter to only accept functions
+ */
+type GetParametersAndReturnType<T extends (...args: any) => any> = {
   params: Parameters<T>;
   returnValue: ReturnType<T>;
 };
