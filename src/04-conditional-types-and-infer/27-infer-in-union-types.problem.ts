@@ -10,7 +10,15 @@ const parser3 = {
   extract: () => true,
 };
 
-type GetParserResult<T> = unknown;
+/**
+ * Here instead of using nested ternary expressions, we can simply use a union to check whether T extends this or that or the other.
+ */
+type GetParserResult<T> = T extends
+  | { parse: () => infer TParser }
+  | { extract: () => infer TParser }
+  | (() => infer TParser)
+  ? TParser
+  : never;
 
 type tests = [
   Expect<Equal<GetParserResult<typeof parser1>, number>>,
