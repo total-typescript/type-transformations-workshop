@@ -2,7 +2,12 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 type Route = "/" | "/about" | "/admin" | "/admin/users";
 
-type RoutesObject = unknown;
+/**
+ * Here we sort of iterate over the "Route" union and use each member of the union to create a key/value pair in an object.
+ */
+type RoutesObject = {
+  [R in Route]: R
+}
 
 type tests = [
   Expect<
