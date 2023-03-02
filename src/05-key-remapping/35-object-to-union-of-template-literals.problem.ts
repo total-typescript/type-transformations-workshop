@@ -6,7 +6,12 @@ interface FruitMap {
   orange: "orange";
 }
 
-type TransformedFruit = unknown;
+/**
+ * Here we are basically doing the same as in the previous exercise, but instead of creating a tuple we create a template literal.
+ */
+type TransformedFruit = {
+  [K in keyof FruitMap]: `${K}:${FruitMap[K]}`
+}[keyof FruitMap];
 
 type tests = [
   Expect<
