@@ -6,7 +6,13 @@ interface Attributes {
   age: number;
 }
 
-type AttributeGetters = unknown;
+/**
+ * Here we are using the "keyof" keyword to access all keys of an object we would like to map into a new type. This even allows use to
+ * access the "value" of that object, by using the key to access the property.
+ */
+type AttributeGetters = {
+  [key in keyof Attributes]: () => Attributes[key]
+};
 
 type tests = [
   Expect<
