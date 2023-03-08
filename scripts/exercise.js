@@ -34,8 +34,11 @@ if (!exerciseFile) {
   process.exit(1);
 }
 
+let watcher = null;
+const stop = (path) => watcher.unwatch(path);
+
 // One-liner for current directory
-chokidar.watch(exerciseFile).on("all", (event, path) => {
+watcher = chokidar.watch(exerciseFile).on("all", (event, path) => {
   const fileContents = fs.readFileSync(exerciseFile, "utf8");
 
   const containsVitest =
@@ -54,6 +57,7 @@ chokidar.watch(exerciseFile).on("all", (event, path) => {
       stdio: "inherit",
     });
     console.log("Typecheck complete. You finished the exercise!");
+    stop(path);
   } catch (e) {
     console.log("Failed. Try again!");
   }
