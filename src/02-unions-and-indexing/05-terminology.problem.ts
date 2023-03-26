@@ -8,26 +8,29 @@
  * Which is which?
  */
 
+// discriminated union, where the 'type' field is the discriminator
 type A =
-  | {
-      type: "a";
-      a: string;
-    }
-  | {
-      type: "b";
-      b: string;
-    }
-  | {
-      type: "c";
-      c: string;
-    };
+	| {
+			type: 'a';
+			a: string;
+	  }
+	| {
+			type: 'b';
+			b: string;
+	  }
+	| {
+			type: 'c';
+			c: string;
+	  };
 
-type B = "a" | "b" | "c";
+// union
+type B = 'a' | 'b' | 'c';
 
+// enum
 enum C {
-  A = "a",
-  B = "b",
-  C = "c",
+	A = 'a',
+	B = 'b',
+	C = 'c',
 }
 
 export {};
