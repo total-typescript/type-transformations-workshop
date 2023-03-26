@@ -29,5 +29,5 @@ type tests = [
   Expect<Equal<OneOnOneProgram, "1on1">>,
   Expect<Equal<SelfDirectedProgram, "selfDirected">>,
   Expect<Equal<PlannedOneOnOneProgram, "planned1on1">>,
-  Expect<Equal<PlannedSelfDirectedProgram, "plannedSelfDirected">>
+  Expect<Equal<PlannedSelfDirectedProgram, "plannedSelfDirected">>,
 ];

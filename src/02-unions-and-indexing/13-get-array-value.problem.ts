@@ -7,5 +7,5 @@ type Fruit = typeof fruits[number];
 
 type tests = [
   Expect<Equal<AppleOrBanana, "apple" | "banana">>,
-  Expect<Equal<Fruit, "apple" | "banana" | "orange">>
+  Expect<Equal<Fruit, "apple" | "banana" | "orange">>,
 ];

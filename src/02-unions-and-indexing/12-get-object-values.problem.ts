@@ -12,5 +12,5 @@ type BackendModuleEnum =
 type tests = [
   Expect<
     Equal<BackendModuleEnum, "SINGLE_MODULE" | "MULTI_MODULE" | "SHARED_MODULE">
-  >
+  >,
 ];

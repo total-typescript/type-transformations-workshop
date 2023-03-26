@@ -21,5 +21,5 @@ type tests = [
   Expect<Equal<IntType, number>>,
   Expect<Equal<FloatType, number>>,
   Expect<Equal<BooleanType, boolean>>,
-  Expect<Equal<IDType, string>>
+  Expect<Equal<IDType, string>>,
 ];

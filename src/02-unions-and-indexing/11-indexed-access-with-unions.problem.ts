@@ -32,5 +32,5 @@ type tests = [
       IndividualProgram,
       "1on1" | "selfDirected" | "planned1on1" | "plannedSelfDirected"
     >
-  >
+  >,
 ];

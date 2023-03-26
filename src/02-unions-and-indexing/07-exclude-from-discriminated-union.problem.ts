@@ -23,5 +23,5 @@ type tests = [
       | { type: "click"; event: MouseEvent }
       | { type: "focus"; event: FocusEvent }
     >
-  >
+  >,
 ];
