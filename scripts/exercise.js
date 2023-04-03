@@ -3,9 +3,26 @@ const fs = require("fs");
 const path = require("path");
 const chokidar = require("chokidar");
 const fg = require("fast-glob");
+const tsconfig = require("../tsconfig.json");
+
+const compilerOptions = Object.entries(tsconfig.compilerOptions)
+  .map(([key, value]) => {
+    if (typeof value === "boolean") {
+      if (value) {
+        return `--${key}`;
+      }
+      return "";
+    }
+
+    if (Array.isArray(value)) {
+      return `--${key} ${value.join(" ")}`;
+    }
+
+    return `--${key} ${JSON.stringify(value)}`;
+  })
+  .join(" ");
 
 const srcPath = path.resolve(__dirname, "../src");
-const tsconfigPath = path.resolve(__dirname, "../tsconfig.json");
 
 const [, , exercise] = process.argv;
 
@@ -50,7 +67,9 @@ chokidar.watch(exerciseFile).on("all", (event, path) => {
       });
     }
     console.log("Checking types...");
-    execSync(`tsc "${exerciseFile}" --noEmit --strict`, {
+    const cmd = `tsc "${exerciseFile}" ${compilerOptions}`;
+
+    execSync(cmd, {
       stdio: "inherit",
     });
     console.log("Typecheck complete. You finished the exercise!");
