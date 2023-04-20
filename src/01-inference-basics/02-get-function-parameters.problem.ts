@@ -8,10 +8,10 @@ const makeQuery = (
       [key: string]: string;
     };
     body?: string;
-  },
+  }
 ) => {};
 
-type MakeQueryParameters = unknown;
+type MakeQueryParameters = Parameters<typeof makeQuery>;
 
 type tests = [
   Expect<
@@ -25,8 +25,8 @@ type tests = [
             [key: string]: string;
           };
           body?: string;
-        },
+        }
       ]
     >
-  >,
+  >
 ];
