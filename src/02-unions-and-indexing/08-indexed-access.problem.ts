@@ -1,3 +1,4 @@
+import { fakeDataDefaults } from "./08-indexed-access.problem";
 import { Equal, Expect } from "../helpers/type-utils";
 
 export const fakeDataDefaults = {
@@ -8,16 +9,18 @@ export const fakeDataDefaults = {
   ID: "id",
 };
 
-export type StringType = unknown;
-export type IntType = unknown;
-export type FloatType = unknown;
-export type BooleanType = unknown;
-export type IDType = unknown;
+type FakeDefaults = typeof fakeDataDefaults;
+
+export type StringType = FakeDefaults["String"];
+export type IntType = FakeDefaults["Int"];
+export type FloatType = FakeDefaults["Float"];
+export type BooleanType = FakeDefaults["Boolean"];
+export type IDType = FakeDefaults["ID"];
 
 type tests = [
   Expect<Equal<StringType, string>>,
   Expect<Equal<IntType, number>>,
   Expect<Equal<FloatType, number>>,
   Expect<Equal<BooleanType, boolean>>,
-  Expect<Equal<IDType, string>>,
+  Expect<Equal<IDType, string>>
 ];
