@@ -2,7 +2,7 @@ import { Equal, Expect } from "../helpers/type-utils";
 
 type Event = `log_in` | "log_out" | "sign_up";
 
-type ObjectOfKeys = unknown;
+type ObjectOfKeys = Record<Uppercase<Event>, string>;
 
 type tests = [
   Expect<
@@ -14,5 +14,5 @@ type tests = [
         SIGN_UP: string;
       }
     >
-  >,
+  >
 ];
