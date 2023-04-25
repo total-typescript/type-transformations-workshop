@@ -11,7 +11,7 @@ const getServerSideProps = async () => {
 };
 
 type InferPropsFromServerSideFunction<T> = T extends () => Promise<{
-  props: infer P;
+  props: { json: infer P };
 }>
   ? P
   : never;
