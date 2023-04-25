@@ -1,6 +1,5 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-// type GetDataValue<T> = T extends string ? never : T["data"];
 type GetDataValue<T> = T extends { data: {} } ? T["data"] : never;
 
 type tests = [
