@@ -1,6 +1,7 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type GetDataValue<T> = unknown;
+// type GetDataValue<T> = T extends string ? never : T["data"];
+type GetDataValue<T> = T extends { data: {} } ? T["data"] : never;
 
 type tests = [
   Expect<Equal<GetDataValue<{ data: "hello" }>, "hello">>,
@@ -13,5 +14,5 @@ type tests = [
   >,
   // Expect that if you pass in string, it
   // should return never
-  Expect<Equal<GetDataValue<string>, never>>,
+  Expect<Equal<GetDataValue<string>, never>>
 ];
