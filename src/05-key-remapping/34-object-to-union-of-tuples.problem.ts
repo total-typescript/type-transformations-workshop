@@ -10,6 +10,11 @@ type ValuesAsUnionOfTuples = {
   [K in keyof Values]: [K, Values[K]];
 }[keyof Values];
 
+// solution explined
+// type keyVal = keyof Values;
+
+// type test = ValuesAsUnionOfTuples[keyof Values];
+
 type tests = [
   Expect<
     Equal<
