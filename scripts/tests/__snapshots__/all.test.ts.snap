@@ -30,34 +30,21 @@ src/03-template-literals/16-unions-in-template-literals.problem.ts(11,5): error 
 src/03-template-literals/17-splitting-strings.problem.ts(12,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03-template-literals/18-template-literals-in-object-keys.problem.ts(9,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03-template-literals/19-uppercase-object.problem.ts(9,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(6,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(6,16): error TS2315: Type 'ReturnWhatIPassIn' is not generic.
-src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(7,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(7,16): error TS2315: Type 'ReturnWhatIPassIn' is not generic.
-src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(8,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(8,16): error TS2315: Type 'ReturnWhatIPassIn' is not generic.
-src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(9,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(9,16): error TS2315: Type 'ReturnWhatIPassIn' is not generic.
-src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(10,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20-type-helpers-pattern.problem.ts(10,16): error TS2315: Type 'ReturnWhatIPassIn' is not generic.
-src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(6,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(6,16): error TS2315: Type 'Maybe' is not generic.
-src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(7,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(7,16): error TS2315: Type 'Maybe' is not generic.
-src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(8,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(8,16): error TS2315: Type 'Maybe' is not generic.
-src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(9,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.1-maybe.problem.ts(9,16): error TS2315: Type 'Maybe' is not generic.
 src/03.5-type-helpers-pattern/20.2-constraints.problem.ts(3,35): error TS2322: Type 'TRoute' is not assignable to type 'string | number | bigint | boolean | null | undefined'.
 src/03.5-type-helpers-pattern/20.2-constraints.problem.ts(10,3): error TS2578: Unused '@ts-expect-error' directive.
 src/03.5-type-helpers-pattern/20.2-constraints.problem.ts(12,3): error TS2578: Unused '@ts-expect-error' directive.
-src/03.5-type-helpers-pattern/20.3-multiple.problem.ts(10,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.3-multiple.problem.ts(11,7): error TS2315: Type 'CreateDataShape' is not generic.
-src/03.5-type-helpers-pattern/20.3-multiple.problem.ts(19,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.3-multiple.problem.ts(20,7): error TS2315: Type 'CreateDataShape' is not generic.
-src/03.5-type-helpers-pattern/20.3-multiple.problem.ts(28,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.3-multiple.problem.ts(29,7): error TS2315: Type 'CreateDataShape' is not generic.
-src/03.5-type-helpers-pattern/20.4-defaults.problem.ts(10,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/03.5-type-helpers-pattern/20.4-defaults.problem.ts(11,7): error TS2314: Generic type 'CreateDataShape' requires 2 type argument(s).
 src/03.5-type-helpers-pattern/20.5-function-constraints.problem.ts(4,22): error TS2344: Type 'T' does not satisfy the constraint '(...args: any) => any'.
 src/03.5-type-helpers-pattern/20.5-function-constraints.problem.ts(5,27): error TS2344: Type 'T' does not satisfy the constraint '(...args: any) => any'.
@@ -65,9 +52,7 @@ src/03.5-type-helpers-pattern/20.6-not-undefined-or-null-constraint.problem.ts(4
 src/03.5-type-helpers-pattern/20.6-not-undefined-or-null-constraint.problem.ts(6,3): error TS2578: Unused '@ts-expect-error' directive.
 src/03.5-type-helpers-pattern/20.7-non-empty-array.problem.ts(3,34): error TS2315: Type 'NonEmptyArray' is not generic.
 src/03.5-type-helpers-pattern/20.7-non-empty-array.problem.ts(8,1): error TS2578: Unused '@ts-expect-error' directive.
-src/04-conditional-types-and-infer/21-conditional-types.problem.ts(6,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-conditional-types-and-infer/21-conditional-types.problem.ts(6,16): error TS2315: Type 'YouSayGoodbyeAndISayHello' is not generic.
-src/04-conditional-types-and-infer/21-conditional-types.problem.ts(7,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-conditional-types-and-infer/21-conditional-types.problem.ts(7,16): error TS2315: Type 'YouSayGoodbyeAndISayHello' is not generic.
 src/04-conditional-types-and-infer/22-returning-never.problem.ts(8,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-conditional-types-and-infer/22-returning-never.problem.ts(9,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
@@ -81,7 +66,6 @@ src/04-conditional-types-and-infer/25-template-literal-value-extraction.problem.
 src/04-conditional-types-and-infer/25-template-literal-value-extraction.problem.ts(16,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-conditional-types-and-infer/25-template-literal-value-extraction.problem.ts(17,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-conditional-types-and-infer/25-template-literal-value-extraction.problem.ts(18,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/04-conditional-types-and-infer/26-get-result-from-async-function.problem.ts(17,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-conditional-types-and-infer/26-get-result-from-async-function.problem.ts(18,7): error TS2315: Type 'InferPropsFromServerSideFunction' is not generic.
 src/04-conditional-types-and-infer/27-infer-in-union-types.problem.ts(16,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/04-conditional-types-and-infer/27-infer-in-union-types.problem.ts(17,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
@@ -96,9 +80,7 @@ src/05-key-remapping/33-discriminated-union-to-object.problem.ts(19,5): error TS
 src/05-key-remapping/34-object-to-union-of-tuples.problem.ts(15,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-key-remapping/35-object-to-union-of-template-literals.problem.ts(13,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/05-key-remapping/36-discriminated-union-to-union.problem.ts(21,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/06-challenges/37-get-dynamic-path-params.problem.ts(10,10): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/37-get-dynamic-path-params.problem.ts(10,16): error TS2315: Type 'ExtractPathParams' is not generic.
-src/06-challenges/37-get-dynamic-path-params.problem.ts(12,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/37-get-dynamic-path-params.problem.ts(13,7): error TS2315: Type 'ExtractPathParams' is not generic.
 src/06-challenges/38-mutually-exclusive-properties.problem.ts(19,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
 src/06-challenges/39-discriminated-union-with-unique-values-to-object.problem.ts(19,5): error TS2344: Type 'false' does not satisfy the constraint 'true'.
