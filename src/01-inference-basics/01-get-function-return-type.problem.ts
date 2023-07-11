@@ -1,7 +1,7 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
 const myFunc = () => {
-  return "hello3";
+  return "hello2";
 };
 
 /**
