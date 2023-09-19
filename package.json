@@ -13,7 +13,7 @@
     "ts-toolbelt": "^9.6.0",
     "typescript": "^5.2.2",
     "vite-tsconfig-paths": "^4.0.7",
-    "vitest": "^0.31.1"
+    "vitest": "^0.34.4"
   },
   "scripts": {
     "exercise": "tt-cli run",
