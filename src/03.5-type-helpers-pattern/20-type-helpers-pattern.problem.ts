@@ -1,5 +1,7 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
+// TODO: implement ReturnWhatIPassIn
+// reference: https://www.typescriptlang.org/docs/handbook/2/generics.html
 type ReturnWhatIPassIn = unknown;
 
 type tests = [

@@ -11,6 +11,8 @@ const makeQuery = (
   },
 ) => {};
 
+// TODO: implement MakeQueryParameters
+// reference: https://www.typescriptlang.org/docs/handbook/utility-types.html#parameterstype
 type MakeQueryParameters = unknown;
 
 type tests = [
