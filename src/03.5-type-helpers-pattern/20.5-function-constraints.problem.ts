@@ -1,5 +1,7 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
+// TODO: implement GetParametersAndReturnType
+// Parameters and ReturnType are both expecting the type of some type
 type GetParametersAndReturnType<T> = {
   params: Parameters<T>;
   returnValue: ReturnType<T>;

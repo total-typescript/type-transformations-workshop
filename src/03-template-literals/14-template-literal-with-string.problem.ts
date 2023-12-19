@@ -1,3 +1,6 @@
+// TODO: implement Route
+// route must start with "/" and can have any number of characters after that
+// reference: https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html
 type Route = unknown;
 
 export const goToRoute = (route: Route) => {};

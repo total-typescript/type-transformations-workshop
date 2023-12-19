@@ -8,6 +8,7 @@ export const fakeDataDefaults = {
   ID: "id",
 };
 
+// TODO: get the following types from the fakeDataDefaults object's property types
 export type StringType = unknown;
 export type IntType = unknown;
 export type FloatType = unknown;

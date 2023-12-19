@@ -1,5 +1,6 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
+// TODO: implement Maybe
 type Maybe = unknown;
 
 type tests = [

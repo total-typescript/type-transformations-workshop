@@ -14,6 +14,8 @@ export type Event =
       event: KeyboardEvent;
     };
 
+// TODO: implement ClickEvent
+// reference: https://www.typescriptlang.org/docs/handbook/utility-types.html#extracttype-union
 type ClickEvent = unknown;
 
 type tests = [Expect<Equal<ClickEvent, { type: "click"; event: MouseEvent }>>];

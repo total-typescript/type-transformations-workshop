@@ -10,6 +10,9 @@ const getServerSideProps = async () => {
   };
 };
 
+// TODO: implement InferPropsFromServerSideFunction
+// InferPropsFromServerSideFunction should infer the props type from
+// getServerSideProps's return type
 type InferPropsFromServerSideFunction = unknown;
 
 type tests = [
@@ -18,5 +21,5 @@ type tests = [
       InferPropsFromServerSideFunction<typeof getServerSideProps>,
       { json: { title: string } }
     >
-  >
+  >,
 ];

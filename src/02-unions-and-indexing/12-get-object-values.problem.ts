@@ -6,6 +6,7 @@ const frontendToBackendEnumMap = {
   sharedModule: "SHARED_MODULE",
 } as const;
 
+// TODO: implement BackendModuleEnum
 type BackendModuleEnum = unknown;
 
 type tests = [
