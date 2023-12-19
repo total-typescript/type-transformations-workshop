@@ -8,6 +8,10 @@ const getUser = () => {
   });
 };
 
+/**
+ * Todo: implement ReturnValue
+ * reference: https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype
+ */
 type ReturnValue = ReturnType<typeof getUser>;
 
 type tests = [

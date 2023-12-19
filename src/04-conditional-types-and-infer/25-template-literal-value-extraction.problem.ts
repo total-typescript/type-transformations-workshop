@@ -8,6 +8,11 @@ type Names = [
   "BB King",
 ];
 
+/**
+ * Todo: implement GetSurname
+ * reference: * reference: https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types
+ * hint: "Matt Pocock" is like `${string} ${string}`
+ */
 type GetSurname<T> = unknown;
 
 type tests = [

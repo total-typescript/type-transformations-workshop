@@ -5,7 +5,9 @@ const myFunc = () => {
 };
 
 /**
- * How do we extract MyFuncReturn from myFunc?
+ * Todo: implement MyFuncReturn
+ * reference: https://www.typescriptlang.org/docs/handbook/2/typeof-types.html
+ * reference: https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype
  */
 type MyFuncReturn = unknown;
 

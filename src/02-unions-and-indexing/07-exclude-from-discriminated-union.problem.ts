@@ -14,6 +14,10 @@ export type Event =
       event: KeyboardEvent;
     };
 
+/**
+ * Todo: implement NonKeyDownEvents
+ * reference: https://www.typescriptlang.org/docs/handbook/utility-types.html#excludeuniontype-excludedmembers
+ */
 type NonKeyDownEvents = unknown;
 
 type tests = [

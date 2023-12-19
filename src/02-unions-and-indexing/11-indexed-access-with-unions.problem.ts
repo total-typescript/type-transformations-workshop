@@ -1,5 +1,6 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
+// mutable object vs immutable object(read only)
 export const programModeEnumMap = {
   GROUP: "group",
   ANNOUNCEMENT: "announcement",
@@ -9,6 +10,12 @@ export const programModeEnumMap = {
   PLANNED_SELF_DIRECTED: "plannedSelfDirected",
 } as const;
 
+/**
+ * Todo: implement IndividualProgram
+ * reference: https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html
+ * reference: https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#handbook-content
+ * reference: https://www.typescriptlang.org/docs/handbook/utility-types.html#excludeuniontype-excludedmembers
+ */
 export type IndividualProgram = unknown;
 
 type tests = [

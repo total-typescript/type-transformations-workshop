@@ -1,5 +1,9 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
+/**
+ * Todo: implement GetDataValue
+ * reference: https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types
+ */
 type GetDataValue<T> = unknown;
 
 type tests = [

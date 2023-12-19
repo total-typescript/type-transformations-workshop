@@ -9,7 +9,12 @@ const parser2 = () => "123";
 const parser3 = {
   extract: () => true,
 };
+type a = typeof parser1
 
+/**
+ * Todo: implement GetParserResult
+ * reference: https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types
+ */
 type GetParserResult<T> = unknown;
 
 type tests = [
