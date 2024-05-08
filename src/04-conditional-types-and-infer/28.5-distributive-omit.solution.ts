@@ -1,8 +1,8 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type DistributiveOmit<T, KeyToOmit extends PropertyKey> = {
-  [K in Exclude<keyof T, KeyToOmit>]: T[K];
-};
+type DistributiveOmit<T, K extends PropertyKey> = T extends any
+  ? Omit<T, K>
+  : never;
 
 export type Event =
   | {

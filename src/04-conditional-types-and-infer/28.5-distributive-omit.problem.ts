@@ -1,9 +1,5 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
-type DistributiveOmit<T, KeyToOmit extends PropertyKey> = {
-  [K in Exclude<keyof T, KeyToOmit>]: T[K];
-};
-
 export type Event =
   | {
       type: "login";
@@ -17,7 +13,7 @@ export type Event =
       timestamp: number;
     };
 
-type EventWithoutTimestamp = DistributiveOmit<Event, "timestamp">;
+type EventWithoutTimestamp = Omit<Event, "timestamp">;
 
 type test = Expect<
   Equal<
