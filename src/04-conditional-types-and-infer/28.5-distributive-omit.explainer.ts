@@ -6,15 +6,15 @@ type DistributiveOmit<T, K extends PropertyKey> = T extends any
 
 export type Event =
   | {
-      type: "login";
+      type: "login"; // Semi in-common
       username: string;
       password: string;
-      timestamp: number;
+      timestamp: number; // In common
     }
   | {
-      type: "login-with-email";
+      type: "login-with-email"; // Semi in-common
       email: string;
-      timestamp: number;
+      timestamp: number; // In common
     };
 
 type EventWithoutTimestamp = DistributiveOmit<Event, "timestamp">;
